@@ -1,0 +1,19 @@
+name: prueba-sdgcontable
+services:
+  mysql:
+    image: mysql@sha256:4bc6bc963e6d8443453676cae56536f4b8156d78bae03c0145cbe47c2aad73bb
+    container_name: prueba-sdgcontable-mysql
+    ports:
+      - "127.0.0.1:33067:3306"
+    environment:
+      MYSQL_DATABASE: sdgcontable_demo
+      MYSQL_USER: consulta_demo
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:?Set a temporary root password}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD:?Set a temporary demo user password}"
+    volumes:
+      - ./catalogos.sql:/docker-entrypoint-initdb.d/10-catalogos.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=\"$$MYSQL_PASSWORD\" mysql --protocol=TCP --host=127.0.0.1 --user=consulta_demo --execute 'SELECT id FROM sdgcontable_demo.usuario WHERE id=401' >/dev/null 2>&1"]
+      interval: 2s
+      timeout: 4s
+      retries: 30
