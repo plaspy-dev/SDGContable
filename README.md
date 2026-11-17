@@ -84,6 +84,11 @@ The archived desktop executable records January 20, 2009 as its link date. The 2
 | Revision | Change |
 | --- | --- |
 | Jan 2009 source family, restored 17 Nov 2026 | Record management screens and their supporting Windows modules. |
+| 17 Nov 2026 | Explain the origin of the sources and the limits of the build. |
+
+### Archive evidence
+
+The stored executables report linker dates on 19 and 20 January 2009. Debug checksums match most application files and the four recovered libraries. The available `MainFrm.cpp` differs from the copy used for the old binary. The source commit uses the archived executable link timestamp, January 20, 2009 at 00:24:06 UTC, as its Git author date. That timestamp does not establish the exact edit date. Git records the reconstruction in 2026 as the committer date.
 
 ### Verification
 
@@ -188,6 +193,11 @@ El ejecutable de escritorio archivado registra el 20 de enero de 2009 como fecha
 | Revisión | Cambio |
 | --- | --- |
 | Fuentes de enero de 2009, restauradas el 17 nov 2026 | Pantallas de registro y módulos de escritorio que usan. |
+| 17 nov 2026 | Explica la procedencia del código y los límites de la compilación. |
+
+### Evidencia del respaldo
+
+Los ejecutables guardados reportan fechas de enlace del 19 y 20 de enero de 2009. Las huellas de depuración coinciden con la mayoría de los archivos y con las cuatro bibliotecas recuperadas. El `MainFrm.cpp` que se conservó difiere del que se usó para el binario antiguo. El commit de código usa como fecha de autor en Git la fecha de enlace del ejecutable archivado, 20 de enero de 2009 a las 00:24:06 UTC. Esa fecha no establece el día exacto de edición. Git registra la reconstrucción de 2026 como fecha de committer.
 
 ### Verificación
 
