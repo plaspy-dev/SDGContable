@@ -1,0 +1,336 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,1
+ PRODUCTVERSION 1,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "SDG"
+            VALUE "FileDescription", "Modulo de Administracion de usuarios"
+            VALUE "FileVersion", "1.2.0.1"
+            VALUE "InternalName", "Administrador.dll"
+            VALUE "LegalCopyright", "SDG.  Reservados todos los derechos."
+            VALUE "OriginalFilename", "Administrador.dll"
+            VALUE "ProductVersion", "1.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEWUSER DIALOGEX 0, 0, 162, 121
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LISTUSUARIOS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,57,7,98,87
+    CONTROL         "",IDC_LISTGRUPOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,44,88
+    PUSHBUTTON      "&Nuevo",IDC_BUTTONNUEVO,105,100,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FORMVIEWUSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Colombia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGCONTRASENA DIALOGEX 0, 0, 142, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Contraseña"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITCONTRASENA,49,7,86,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCONFIRMA,49,26,86,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Aceptar",IDOK,15,48,50,14
+    PUSHBUTTON      "&Cancelar",IDCANCEL,76,48,50,14
+    LTEXT           "Nueva",IDC_STATIC,7,9,22,8
+    LTEXT           "Confirmar",IDC_STATIC,7,27,32,8
+END
+
+IDD_DIALOGUSUARIO DIALOGEX 0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Usuario"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITNOMBRE,67,7,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRECOMPLETO,67,22,112,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CGRUPO,67,37,112,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Contraseña",IDC_BUTTONCONTRASENA,129,55,50,14
+    DEFPUSHBUTTON   "&Aceptar",IDOK,7,55,50,14
+    PUSHBUTTON      "&Cancelar",IDCANCEL,68,55,50,14
+    LTEXT           "Usuario",IDC_STATIC,7,10,25,8
+    LTEXT           "Grupo",IDC_STATIC,7,39,26,8
+    LTEXT           "Nombre completo",IDC_STATIC,7,25,56,8
+END
+
+IDD_MISCELANEOSVIEW DIALOGEX 0, 0, 320, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LTIPO,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,89,200
+    CONTROL         "",IDC_LELEMENTOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,97,7,216,142
+    LTEXT           "Nombre",IDC_SNOMBRE,101,156,26,8
+    LTEXT           "Descripción",IDC_SDESCRIPCION,101,175,37,8
+    EDITTEXT        IDC_ENOMBRE,141,155,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDESCRIPCION,141,172,119,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Aceptar",IDC_BACEPTAR,210,193,50,14
+    PUSHBUTTON      "Cancelar",IDC_BCANCELAR,263,193,50,14
+END
+
+IDD_PROVEEDORESVIEW DIALOGEX 0, 0, 376, 179
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ENIT,55,98,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRE,239,98,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECCION,55,112,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETELEFONO,239,112,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESERVICIOS,55,144,314,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,265,158,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,319,158,50,14
+    CONTROL         "",IDC_LENTIDADES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,362,86
+    LTEXT           "Nombre",IDC_SNOMBRE,191,101,26,8
+    LTEXT           "Descripción",IDC_SSERVICIOS,7,147,37,8
+    LTEXT           "Dirección",IDC_SDIRECCION,7,115,30,8
+    LTEXT           "Teléfono",IDC_STELEFONO,191,115,29,8
+    LTEXT           "Documento",IDC_SNIT,7,101,37,8
+    EDITTEXT        IDC_EEMAIL,55,128,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECONTACTO,239,128,130,14,ES_AUTOHSCROLL
+    LTEXT           "E-Mail",IDC_SEMAIL,7,131,20,8
+    LTEXT           "Contacto",IDC_SCONTACTO,191,131,30,8
+END
+
+IDD_GRUPOSVIEW DIALOGEX 0, 0, 313, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LGRUPO,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,70,171
+    EDITTEXT        IDC_ENOMBRE,123,8,177,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDESCRIPCION,123,23,177,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LPERMISOS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,86,51,214,106
+    PUSHBUTTON      "Aceptar",IDOK,202,164,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,253,164,50,14
+    LTEXT           "Nombre",IDC_SNOMBRE,86,11,26,8
+    LTEXT           "Descripción",IDC_SDESCRIPCION,86,26,37,8
+    GROUPBOX        "Permisos",IDC_SPERMISOS,79,40,227,122
+END
+
+IDD_CLIENTESVIEW DIALOGEX 0, 0, 378, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ENIT,55,98,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENOMBRE,239,98,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECCION,55,113,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETELEFONO,239,113,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEMAIL,55,128,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECONTACTO,239,128,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESERVICIOS,55,144,314,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,265,161,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,319,161,50,14
+    CONTROL         "",IDC_LENTIDADES,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,362,86
+    LTEXT           "Nombre",IDC_SNOMBRE,191,102,26,8
+    LTEXT           "Descripción",IDC_SSERVICIOS,7,147,37,8
+    LTEXT           "Dirección",IDC_SDIRECCION,7,116,30,8
+    LTEXT           "Teléfono",IDC_STELEFONO,191,116,29,8
+    LTEXT           "Documento",IDC_SNIT,7,102,37,8
+    LTEXT           "E-Mail",IDC_SEMAIL,7,131,20,8
+    LTEXT           "Contacto",IDC_SCONTACTO,191,131,30,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGCONTRASENA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOGUSUARIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_MISCELANEOSVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_PROVEEDORESVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_GRUPOSVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_CLIENTESVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Administrador.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Colombia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Administrador.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
