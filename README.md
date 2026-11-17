@@ -8,7 +8,7 @@ Fuentes de una aplicación contable de Windows. El módulo conservado muestra c�
 
 ### Esta revisión
 
-**2026-11-17 · Administrar clientes y proveedores de contabilidad.** Recupera los formularios de clientes y proveedores junto con la administración de grupos. Los catálogos dan un origen común a los registros que se usan en la aplicación contable.
+**2026-11-17 · Documentar la preparación del entorno contable.** Explica dónde revisar las referencias de Visual C++ y qué recursos gráficos espera la solución contable. Esto permite reunir los componentes antes de intentar compilar sus formularios.
 
 ### Cómo explorar el código
 
@@ -25,7 +25,7 @@ Source from a Windows accounting application. The preserved module shows how sha
 
 ### This revision
 
-**2026-11-17 · Manage accounting customers and suppliers.** Recover customer and supplier forms and group administration. The catalogs give the accounting application a common source for the records it uses.
+**2026-11-17 · Document the accounting project's build setup.** Explain where to check the Visual C++ references and which graphics the accounting solution expects. Readers can gather the components before trying to build its forms.
 
 ### How to explore the source
 
