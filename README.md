@@ -68,6 +68,7 @@ Remove-Item Env:MYSQL_ROOT_PASSWORD, Env:MYSQL_PASSWORD -ErrorAction SilentlyCon
 - `vendor/include/` contains the four shared-library projects used by `SDGContable.sln`. `vendor/src/` contains their implementations and `vendor/mysql-sdk/` holds the SDK.
 - `compat/tmschema.h` maps the legacy theme include to the Windows SDK.
 - `demo/compose.yaml` starts the disposable database. `demo/catalogos.sql` supplies fictional records and `demo/ProbarEscritorio.ps1` opens the test app.
+- `docs/media/` contains the invoice form image and recording of the fictional desktop test.
 
 ### Support
 
@@ -85,6 +86,7 @@ The archived desktop executable records January 20, 2009 as its link date. The 2
 | --- | --- |
 | Jan 2009 source family, restored 17 Nov 2026 | Record management screens and their supporting Windows modules. |
 | 17 Nov 2026 | Explain the origin of the sources and the limits of the build. |
+| 18 Nov 2026 | Add the screenshot and animation of the fictional invoice trial recorded on November 19, 2026. |
 
 ### Archive evidence
 
@@ -103,6 +105,16 @@ Tools used — Windows 11 Pro 26300, MSBuild 18.11.1.51303, MSVC toolset 14.51.3
 & .\bin\Release\ProbarModulo.exe "$PWD\bin\Release\appt.dll"
 .\demo\ProbarCatalogos.ps1
 ```
+
+### Screenshots
+
+The still image and animation show the separate invoice form trial recorded on November 19, 2026. The November 22 and 24 verifications repeated the invoice workflow with separate fictional fixtures.
+
+The image shows the fictional invoice displayed in the Release Win32 desktop trial.
+
+![SDGContable invoice form filled with sample 501 and fictional customer](docs/media/facturas-demo.png)
+
+![Opening the invoice form and entering the fictional values](docs/media/facturas-demo.gif)
 
 ### License
 
@@ -177,6 +189,7 @@ Remove-Item Env:MYSQL_ROOT_PASSWORD, Env:MYSQL_PASSWORD -ErrorAction SilentlyCon
 - `vendor/include/` contiene los cuatro proyectos de biblioteca que usa `SDGContable.sln`. `vendor/src/` guarda su código y `vendor/mysql-sdk/` guarda el SDK.
 - `compat/tmschema.h` enlaza el encabezado antiguo de temas con el SDK de Windows.
 - `demo/compose.yaml` inicia la base desechable. `demo/catalogos.sql` aporta los registros ficticios y `demo/ProbarEscritorio.ps1` abre la aplicación de prueba.
+- `docs/media/` contiene la imagen del formulario de factura y la grabación de la prueba con datos ficticios.
 
 ### Soporte
 
@@ -194,6 +207,7 @@ El ejecutable de escritorio archivado registra el 20 de enero de 2009 como fecha
 | --- | --- |
 | Fuentes de enero de 2009, restauradas el 17 nov 2026 | Pantallas de registro y módulos de escritorio que usan. |
 | 17 nov 2026 | Explica la procedencia del código y los límites de la compilación. |
+| 18 nov 2026 | Agrega la captura y la animación del ensayo de Facturas con datos ficticios del 19 de noviembre de 2026. |
 
 ### Evidencia del respaldo
 
@@ -212,6 +226,16 @@ Herramientas usadas — Windows 11 Pro 26300, MSBuild 18.11.1.51303, MSVC toolse
 & .\bin\Release\ProbarModulo.exe "$PWD\bin\Release\appt.dll"
 .\demo\ProbarCatalogos.ps1
 ```
+
+### Capturas
+
+La imagen y la animación muestran el ensayo separado del formulario de facturas del 19 de noviembre de 2026. Las verificaciones del 22 y 24 de noviembre repitieron ese recorrido con datos ficticios independientes.
+
+La imagen muestra la factura ficticia en la prueba de escritorio Release Win32.
+
+![Formulario Facturas de SDGContable con el número de muestra 501 y cliente ficticio](docs/media/facturas-demo.png)
+
+![Apertura del formulario de factura y escritura de valores ficticios](docs/media/facturas-demo.gif)
 
 ### Licencia
 
